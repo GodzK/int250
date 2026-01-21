@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 5 Sample Page</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+      .hero-section {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">MyWebsite</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero-section py-5 text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Hello, Phakaphol</h1>
+        <p class="lead text-muted mb-4">This is a simple example showing how fast you can build a responsive layout.</p>
+        <div class="d-flex justify-content-center gap-2">
+          <button class="btn btn-primary btn-lg">Get Started</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Click for Pop-up
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row g-4">
+        
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Responsive Grid</h5>
+              <p class="card-text">Bootstrap's grid system allows you to align content easily. Resize your browser to see how this layout changes.</p>
+              <a href="#" class="btn btn-primary btn-sm">Read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Components</h5>
+              <p class="card-text">Pre-built components like Navbars, Cards, and Modals save you hours of coding time.</p>
+              <a href="#" class="btn btn-success btn-sm">See Components</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Utilities</h5>
+              <p class="card-text">Use classes like <code>text-center</code>, <code>p-5</code> (padding), and <code>mt-3</code> (margin) to style without writing CSS.</p>
+              <a href="#" class="btn btn-warning btn-sm">Learn Utilities</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <div class="container">
+        <p class="mb-0">&copy; 2024 My Sample Website</p>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5">Modal Title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            This is a Bootstrap Modal! It works because we included the JavaScript bundle at the bottom of the code.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
